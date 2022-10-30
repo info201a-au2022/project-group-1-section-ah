@@ -15,10 +15,13 @@ Population has always been an issue for many Asian countries. For example, India
 ### **Research Questions**
 1. Which countries are facing the most issues currently or in the near future from population increase/decrease? This is important because the data from thouse countries could set precedents for similar issues in the future.
 2. What are common factors of nations that have the highest birth/death rate incline/decline? Which factors seem to have the biggest impact? This is important to understand the source of the issue, and the areas to focus on when resolving the issue.
-3. Is there a general trend among all nations? If so, what are the trends, and if not, what is causing all the difference? This question will allow us to categorize and group up countries into some sections and 
+3. Is there a general trend among all nations? If so, what are the trends, and if not, what is causing all the difference? This question will allow us to categorize and group up countries into some sections and provide a more generalized visualization and analysis.
+4. Baesd on future projections, what are some necessary changes or suggestions to be made? This draws out a possible suggestion from the analysis made. 
 ### **The Dataset**
 ### **Expected Limitations**
+Some possible implications we made for our research questions were that the data collected are accurate, and that our 
 ### **Limitations**
+Some limiations we need to address are that aside from the data collected and visualized, which are also estimates, a lot of our analysis will be based on prediction. The subject of our research relies heavily on assumption or an educated guess at best. For example, since surveying the entire population for the reason for their choice on to have a child or not is impossible, we study their culture, religion, ethics, and etc, to make an educated guess backed with evidence. Another limitation is that historical events will affect our data analysis. Events like plagues, wars, or any other event that impacted population count can all potentially somewhat skew our data. We will attempt to do our best in identifying those outliars, but it is near impossible to filter all of it.
 ### **Acknowledgements**
 ### References
 “World Population 1950-2022.” MacroTrends, https://www.macrotrends.net/countries/WLD/world/population.  *(found all population datasets)* 
