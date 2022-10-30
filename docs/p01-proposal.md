@@ -13,6 +13,9 @@ Population has always been an issue for many Asian countries. For example, India
 
 ### **Problem Domain**
 ### **Research Questions**
+1. Which countries are facing the most issues currently or in the near future from population increase/decrease? This is important because the data from thouse countries could set precedents for similar issues in the future.
+2. What are common factors of nations that have the highest birth/death rate incline/decline? Which factors seem to have the biggest impact? This is important to understand the source of the issue, and the areas to focus on when resolving the issue.
+3. Is there a general trend among all nations? If so, what are the trends, and if not, what is causing all the difference? This question will allow us to categorize and group up countries into some sections and 
 ### **The Dataset**
 ### **Expected Limitations**
 ### **Limitations**
