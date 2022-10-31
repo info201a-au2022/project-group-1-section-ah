@@ -25,6 +25,7 @@ Some limiations we need to address are that aside from the data collected and vi
 ### **Acknowledgements**
 ### References
 “World Population 1950-2022.” MacroTrends, https://www.macrotrends.net/countries/WLD/world/population.  *(found all population datasets)* 
-
+S, Sandhya. “Asian Countries by Population.” Kaggle, 26 May 2022, https://www.kaggle.com/datasets/sansuthi/asian-countries-by-population?resource=download. 
+“Compare Countries.” TheGlobalEconomy.com, https://www.theglobaleconomy.com/compare-countries/. 
 ### Questions for TA
 
