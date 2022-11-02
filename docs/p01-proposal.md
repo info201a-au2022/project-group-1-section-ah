@@ -57,7 +57,7 @@ women's rights, access to contraceptives, and increased funding for education
 as productive alternatives to the heavy-handed, oppressive approaches listed in
 the section above.
 #### **Example figure**
-![A graph of birth rates in China over time, from 1960 to 2014. Starting at around 6 children/mother in the mid-1960's, the birth rate gradually dropped to around 2.5/mother in 1980, at the point the One-Child policy was enacted. Rates plateaued around 2.5 children/mother for a decade, before dropping to plateau at 1.5 until the present day.](/project-group-1-section-ah/docs/China_OCP_Graph.PNG)
+![A graph of birth rates in China over time, from 1960 to 2014. Starting at around 6 children/mother in the mid-1960's, the birth rate gradually dropped to around 2.5/mother in 1980, at the point the One-Child policy was enacted. Rates plateaued around 2.5 children/mother for a decade, before dropping to plateau at 1.5 until the present day.](/docs/China_OCP_Graph.PNG)
 
 ### **Research Questions**
 1. Which countries are facing the most issues currently or in the near future from population increase/decrease? This is important because the data from those countries could set precedents for similar issues in the future.
