@@ -1,6 +1,7 @@
 # Asian Countries and The Change in Population Throughout the Years
 
 ## CODE NAME
+asian_pop
 ## By Kai Andreic (kandreic@uw.edu), Yoobin Lee (yl0517@uw.edu), Tom Sander (tjsander@uw.edu), and Ethan Kim (doogyoo@uw.edu)
 Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington Date: Autumn 2022
 
@@ -85,7 +86,7 @@ In the event that all of our research questions are answered, there are many imp
 Some limiations we need to address are that aside from the data collected and visualized, which are also estimates, a lot of our analysis will be based on prediction. The subject of our research relies heavily on assumption or an educated guess at best. For example, since surveying the entire population for the reason for their choice on to have a child or not is impossible, we study their culture, religion, ethics, and etc, to make an educated guess backed with evidence. Another limitation is that historical events will affect our data analysis. Events like plagues, wars, or any other event that impacted population count can all potentially somewhat skew our data. We will attempt to do our best in identifying those outliers, but it is near impossible to filter all of it.
 ### **Acknowledgements**
 ### References
-“World Population 1950-2022.” MacroTrends, https://www.macrotrends.net/countries/WLD/world/population.  *(found all population datasets)*
-S, Sandhya. “Asian Countries by Population.” Kaggle, 26 May 2022, https://www.kaggle.com/datasets/sansuthi/asian-countries-by-population?resource=download.
-“Compare Countries.” TheGlobalEconomy.com, https://www.theglobaleconomy.com/compare-countries/.
+* “World Population 1950-2022.” MacroTrends, https://www.macrotrends.net/countries/WLD/world/population.  *(found all population datasets)*
+* S, Sandhya. “Asian Countries by Population.” Kaggle, 26 May 2022, https://www.kaggle.com/datasets/sansuthi/asian-countries-by-population?resource=download.
+* “Compare Countries.” TheGlobalEconomy.com, https://www.theglobaleconomy.com/compare-countries/.
 ### Questions for TA
