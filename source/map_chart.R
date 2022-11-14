@@ -3,7 +3,7 @@ library(tidyverse)
 library(maps)
 library(plotly)
 library(dplyr)
-all_info <-read_csv("/Users/kai/Documents/Info201/project-group-1-section-ah/data/populationDataset.csv")
+all_info <-read_csv("https://raw.githubusercontent.com/info201a-au2022/project-group-1-section-ah/main/data/populationDataset.csv")
 
 mapdatas <- map_data("world")
 colnames(mapdatas)[5] <- "Country"
