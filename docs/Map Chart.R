@@ -1,7 +1,6 @@
 library(ggplot2)
 library(tidyverse)
 library(maps)
-library(plotly)
 library(dplyr)
 all_info <-read_csv("/Users/kai/Documents/Info201/project-group-1-section-ah/data/populationDataset.csv")
 
@@ -28,8 +27,4 @@ View(mapdata1s)
 map1s<-ggplot(mapdata1s, aes( x = long, y = lat, group=group)) +
     geom_polygon(aes(fill = `Population size in millions`), color = "black")
 map1s
-
-
-install.packages("cowplot")
-library(cowplot)
 

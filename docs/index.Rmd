@@ -23,6 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # then "source" an R file (data_access.R)
 source("../source/data_access.R")
 data_access_test()
+source("/Users/kai/Documents/Info201/project-group-1-section-ah/source/map_chart.R")
 ```
 
 ### Example 2: Initialize a variable and then use it
@@ -46,9 +47,9 @@ summary(cars)
 ## Including Plots
 
 You can also embed plots, for example:
-
+Map Chart
 ```{r pressure, echo=FALSE}
-plot(pressure)
+map1s
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

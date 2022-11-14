@@ -6,7 +6,6 @@ library(dplyr)
 all_info <-read_csv("/Users/kai/Documents/Info201/project-group-1-section-ah/data/populationDataset.csv")
 
 mapdatas <- map_data("world")
-View(map_datas)
 colnames(mapdatas)[5] <- "Country"
 mapdatas <- left_join(mapdatas , all_info, by= "Country")
 
