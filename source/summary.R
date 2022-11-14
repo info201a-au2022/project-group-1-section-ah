@@ -3,5 +3,5 @@
 library(dplyr)
 library(tidyverse)
 
-populationData <- read.csv(file = 'populationDataset.csv')
+populationData <- read.csv(file = 'data/populationDataset.csv')
 ?read.csv()
