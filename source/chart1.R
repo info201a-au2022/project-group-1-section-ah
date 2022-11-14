@@ -13,7 +13,7 @@ by_country <- filter(by_country, Code != "IND")
 View(by_country)
 
 population_trend_plot <- ggplot(by_country, aes(x=Year, y=Population.size.in.millions, color = Code)) + geom_line()
-print(population_trend_plot + ggtitle("Population Trends of Every Country in Asia Excluding China and India"))
+print(population_trend_plot + ggtitle("Population Trends of Every Country in Asia Excluding China and India") + labs(y = "Population Size in Millions"))
 
 # This chart shows the population trends for every single country in Asia excluding China and India.
 # We decided to exclude China and India for this plot because they created too large of an outlier.
