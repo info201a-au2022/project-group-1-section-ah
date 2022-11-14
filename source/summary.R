@@ -3,7 +3,7 @@
 library(dplyr)
 library(tidyverse)
 
-populationData <- read.csv("/Users/yoobinlee/Autumn2022/info201/project/project-group-1-section-ah/data/populationDataset.csv")
+populationData <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-1-section-ah/main/data/populationDataset.csv")
 View(populationData)
 
 summary_info <- list()
