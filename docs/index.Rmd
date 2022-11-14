@@ -21,15 +21,23 @@ knitr::opts_chunk$set(echo = TRUE)
 # Example 1: Note relative path, which can be read: Up one
 # directory(..), down into source (/source), and 
 # then "source" an R file (data_access.R)
+library(maps)
+library(cowplot)
 source("../source/data_access.R")
 data_access_test()
-source("/Users/kai/Documents/Info201/project-group-1-section-ah/source/map_chart.R")
 ```
 
 ### Example 2: Initialize a variable and then use it
 ```{r}
 # Example 1: This function was "sourced" above
 msg <- data_access_test(" Morgan!")
+```
+
+
+```{r}
+# Sourcing charts here
+source("../source/map_chart.R")
+source("../source/chart2.R")
 ```
 
 > `r msg` Hope you have a good day!! 
