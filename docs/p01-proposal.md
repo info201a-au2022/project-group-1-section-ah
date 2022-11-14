@@ -1,6 +1,7 @@
 # Asian Countries and The Change in Population Throughout the Years
 
 ## CODE NAME
+asian_pop
 ## By Kai Andreic (kandreic@uw.edu), Yoobin Lee (yl0517@uw.edu), Tom Sander (tjsander@uw.edu), and Ethan Kim (doogyoo@uw.edu)
 Affiliation: INFO-201: Technical Foundations of Informatics - The Information School - University of Washington Date: Autumn 2022
 
@@ -56,11 +57,7 @@ women's rights, access to contraceptives, and increased funding for education
 as productive alternatives to the heavy-handed, oppressive approaches listed in
 the section above.
 #### **Example figure**
-![A graph of birth rates in China over time, from 1960 to 2014. Starting at around
-6 children/mother in the mid-1960's, the birth rate gradually dropped to around
-2.5/mother in 1980, at the point the One-Child policy was enacted. Rates plateaued
-around 2.5 children/mother for a decade, before dropping to plateau at 1.5 until
-the present day.](docs/China_OCP_Graph.PNG)
+![A graph of birth rates in China over time, from 1960 to 2014. Starting at around 6 children/mother in the mid-1960's, the birth rate gradually dropped to around 2.5/mother in 1980, at the point the One-Child policy was enacted. Rates plateaued around 2.5 children/mother for a decade, before dropping to plateau at 1.5 until the present day.](/docs/China_OCP_Graph.PNG)
 
 ### **Research Questions**
 1. Which countries are facing the most issues currently or in the near future from population increase/decrease? This is important because the data from those countries could set precedents for similar issues in the future.
@@ -78,14 +75,14 @@ the present day.](docs/China_OCP_Graph.PNG)
 3. “Compare Countries.” TheGlobalEconomy.com, https://www.theglobaleconomy.com/compare-countries/.
 4. (a) The data was initially collected by the United Nations Population Division with the earliest data coming from 1960, and the latest coming from 2021. The United Nations Population Division is a subdivision of the Department of Economic and Social Affairs. They conduct research on demographics, support processes which are intergovernmental and which pertain to development and population in the United Nations, and assist nations to develop, produce, and analyze population data. This data in specific was collected for a multitude of purposes as this data is extremely versatile. (b) This data was funded by the United Nations. The UN collects funding in two ways; assessed contributions and voluntary contributions. Assessed contributions to the UN are required for all member nations, and voluntary contributions are completely optional donations. This data likely benefits all member nations, with a specific emphasis on nations which are currently struggling with population growth or decline. (c) The data is validated and held secure by an entire team at the United Nations. The United Nations Population Division often conducts research and collects data in order to service the people of the member nations. It is extremely credible and trustworthy as this data influences many nations across the globe. The UN cannot utilize data which can even be considered fraudulent as it would affect foreign policy to a grand degree. (d) The data was obtained through a site called TheGlobalEconomy.com, which carefully selects data from the some of the most credible sources in the world. The data itself cannot be credited to the website, as it was collected by the United Nations, but the site gathers a plethora of important information and makes it easily accessible for those that need it.
 
-### **Expected Limitations**
+### **Expected Implications**
 In the event that all of our research questions are answered, there are many implications that those with power need to make. In countries that are struggling with population, policymakers and others will likely have to challenge cultural norms in order to combat the rapid declines. Changing cultural norms allows for citizens to completely reform their ideologies about their own nations and what it means to have a family, therefore inspiring growth within their own borders. Alongside this, those in power will have to make it a strong priority to influence economic growth. With economic growth typically comes an increase in population. More housing and facilities of all kinds are also needed, especially in areas where population is in a strong decline. A population cannot grow without places to house the population. Alongside this a population cannot thrive without infrastructure to support it. In modern day, people need schools and healthcare amongst other things essentially to live.
 
 ### **Limitations**
 Some limiations we need to address are that aside from the data collected and visualized, which are also estimates, a lot of our analysis will be based on prediction. The subject of our research relies heavily on assumption or an educated guess at best. For example, since surveying the entire population for the reason for their choice on to have a child or not is impossible, we study their culture, religion, ethics, and etc, to make an educated guess backed with evidence. Another limitation is that historical events will affect our data analysis. Events like plagues, wars, or any other event that impacted population count can all potentially somewhat skew our data. We will attempt to do our best in identifying those outliers, but it is near impossible to filter all of it.
 ### **Acknowledgements**
 ### References
-“World Population 1950-2022.” MacroTrends, https://www.macrotrends.net/countries/WLD/world/population.  *(found all population datasets)*
-S, Sandhya. “Asian Countries by Population.” Kaggle, 26 May 2022, https://www.kaggle.com/datasets/sansuthi/asian-countries-by-population?resource=download.
-“Compare Countries.” TheGlobalEconomy.com, https://www.theglobaleconomy.com/compare-countries/.
+* “World Population 1950-2022.” MacroTrends, https://www.macrotrends.net/countries/WLD/world/population.  *(found all population datasets)*
+* S, Sandhya. “Asian Countries by Population.” Kaggle, 26 May 2022, https://www.kaggle.com/datasets/sansuthi/asian-countries-by-population?resource=download.
+* “Compare Countries.” TheGlobalEconomy.com, https://www.theglobaleconomy.com/compare-countries/.
 ### Questions for TA
