@@ -3,7 +3,8 @@ library(tidyr)
 library(tidyverse)
 library(ggrepel)
 
-asia_data <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-1-section-ah/main/data/populationDataset.csv") %>% 
+
+asia_data <- read.csv("../data/populationDataset.csv") %>% 
   data.frame()
 
 asia_data_21 <- asia_data %>% 
