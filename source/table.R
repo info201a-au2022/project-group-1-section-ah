@@ -11,6 +11,7 @@ d <- populationData %>%
   select(Country, Code, ContinentCode, Population.growth.percent, Population.size.in.millions) %>% 
   group_by(Country, Code, ContinentCode) %>% 
   summarize(AveragePopulationGrowthInPercentage = round(mean(Population.growth.percent, na.rm = TRUE),2)) 
+
 View(d)
 
 # This table shows the average growth in population for each country by percentage each year.
