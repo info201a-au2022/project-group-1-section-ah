@@ -10,8 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Dynamic Paragraph
-
-* This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
+With our summary function things that we were able to pull included the amount of countries (49), the higest population recorded in an Asian country based off recent reports (China, 1.412 billion), the country that had the lowest population recent reports (Brunei, ~440,000), the highest life expectancy based off all years (Japan, 84.62 years old, 2020), and finally the lowest life expectancy based off all years (Cambodia, 18.91 years old, 1977). For most of these countries it really makes sense on to why their numbers are what they are. For example, China has always been known to have a massive population that is also sadly effecting them poorly with their insanely poor air quality. Additionally, Japan is known to have a pretty healthy life due to the high care for their individual health and how high they view doctors. Also just based off of other things like location and lack of technology it makes sense to why Brunei and Cambodia seem to be more on the lower end of the stick especially since the data for lowest life span was taken in 1977 where already the life span was low for most countries but in general during that time when disease was one of the scariest things Cambodia lacked the knowledge and technology to take care of those diseases at the same time.
 
 * Please see Canvas for more details.
 
