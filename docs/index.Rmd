@@ -6,62 +6,41 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Dynamic Paragraph
-With our summary function things that we were able to pull included the amount of countries (49), the higest population recorded in an Asian country based off recent reports (China, 1.412 billion), the country that had the lowest population recent reports (Brunei, ~440,000), the highest life expectancy based off all years (Japan, 84.62 years old, 2020), and finally the lowest life expectancy based off all years (Cambodia, 18.91 years old, 1977). For most of these countries it really makes sense on to why their numbers are what they are. For example, China has always been known to have a massive population that is also sadly effecting them poorly with their insanely poor air quality. Additionally, Japan is known to have a pretty healthy life due to the high care for their individual health and how high they view doctors. Also just based off of other things like location and lack of technology it makes sense to why Brunei and Cambodia seem to be more on the lower end of the stick especially since the data for lowest life span was taken in 1977 where already the life span was low for most countries but in general during that time when disease was one of the scariest things Cambodia lacked the knowledge and technology to take care of those diseases at the same time.
-
-* Please see Canvas for more details.
-
-## ACCESSING THE /source DIRECTORY
-### Example 1: Source some code and run a function
-```{r}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
-library(maps)
-library(cowplot)
-source("../source/data_access.R")
-data_access_test()
-```
-
-### Example 2: Initialize a variable and then use it
-```{r}
-# Example 1: This function was "sourced" above
-msg <- data_access_test(" Morgan!")
-```
-
-
-```{r}
+```{r sourcing, include=FALSE}
 # Sourcing charts here
 source("../source/map_chart.R")
 source("../source/chart2.R")
 source("../source/table.R")
+source("../source/chart1.R")
+source("../source/summary.R")
 ```
 
-> `r msg` Hope you have a good day!! 
+## Dynamic Paragraph
+With our summary function things that we were able to pull included the amount of countries (`r summary_info$num_countries`), the current population in millions of the largest Asian country (`r summary_info$highest_population_2021`), as well as that of the current smallest (`r summary_info$lowest_population_2021`), the highest life expectancy based off all years (`r summary_info$highest_life_expectancy_all_time`), and finally the lowest life expectancy based off all years (`r summary_info$lowest_life_expectancy_all_time`). For most of these countries it really makes sense on to why their numbers are what they are. For example, China has always been known to have a massive population that is also sadly effecting them poorly with their insanely poor air quality. Additionally, Japan is known to have a pretty healthy life due to the high care for their individual health and how high they view doctors. Also just based off of other things like location and lack of technology it makes sense to why Brunei and Cambodia seem to be more on the lower end of the stick especially since the data for lowest life span was taken in 1977 where already the life span was low for most countries but in general during that time when disease was one of the scariest things Cambodia lacked the knowledge and technology to take care of those diseases at the same time.
 
-## ABOUT THIS FILE: 
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
-```
 
 ## Including Plots
 
 ## Aggregate Table
 ```{r table, echo = FALSE}
-d
+knitr::kable(d)
 ```
 ##### Short Summary
 This table shows the average growth in population for each country by percentage each year. We hoped to find countries of concern and further study their behaviors and policies. Nations such as Japan and Georgia have an extremely concerning lack of growth yearly, and we aim to find why that is through further research.
 
 We also hoped to find countries with high growths in populations in order to study further and see what they are doing in order to increase their populations year by year. An interesting thing to note is that countries which are located in the Middle East typically see larger growth year by year, than the rest of their Asian counterparts.
+
+
+## Growth Rates
+```{r growth, echo=FALSE}
+population_trend_plot
+```
+##### Short summary
+This chart shows the population trends for every single country in Asia excluding China and India. We decided to exclude China and India for this plot because they created too large of an outlier. While every country had an increasing trend,we noticed that the countries that show a slight decline around the beginning of 21st Century are generally wealthier countries. 
 
 ## Map Chart (2021 only)
 ```{r pressure, echo=FALSE}
@@ -72,3 +51,11 @@ happy_map
 ##### Short summary
 The two map charts are suppose to show how one the population throughout all the Asian countries and additionally the happiness index across all the Asian countries. The first one is obvious on why it is important mainly because of the fact that it is important to document the population in 2021 and the happiness index can also be a way to indentify why a certain country has more people in it than not.
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r demotransit, echo = FALSE, message = FALSE, results = 'hide'}
+demo_transit
+```
+## Summary
+
+The demographic transition is a model of population dynamics that argues the growth of countries follows a set pattern, driven by birth rates and death rates; 
+the population explosion following the industrial revolution can be explained by birth rates remaining high while death rates plummeted, and the recent trend of slowing growth can be explained as birth rates finally decreasing to match death rates. Each subregion of Asia displays this process, with noticably different timescales and idiosyncrasies.  
