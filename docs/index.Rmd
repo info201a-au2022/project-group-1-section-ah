@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## What is this file for?
+## Dynamic Paragraph
 
 * This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
 
@@ -54,11 +54,13 @@ summary(cars)
 
 ## Including Plots
 
-You can also embed plots, for example:
-Map Chart
+
+## Map Chart (2021 only)
 ```{r pressure, echo=FALSE}
 map1s
 happy_map
 ```
 
+##### Short summary
+The two map charts are suppose to show how one the population throughout all the Asian countries and additionally the happiness index across all the Asian countries. The first one is obvious on why it is important mainly because of the fact that it is important to document the population in 2021 and the happiness index can also be a way to indentify why a certain country has more people in it than not.
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
