@@ -18,18 +18,16 @@ source("../source/chart1.R")
 source("../source/summary.R")
 ```
 
-## Dynamic Paragraph
+## Quantifying Asian Growth
 With our summary function things that we were able to pull included the amount of countries (`r summary_info$num_countries`), the current population in millions of the largest Asian country (`r summary_info$highest_population_2021`), as well as that of the current smallest (`r summary_info$lowest_population_2021`), the highest life expectancy based off all years (`r summary_info$highest_life_expectancy_all_time`), and finally the lowest life expectancy based off all years (`r summary_info$lowest_life_expectancy_all_time`). For most of these countries it really makes sense on to why their numbers are what they are. For example, China has always been known to have a massive population that is also sadly effecting them poorly with their insanely poor air quality. Additionally, Japan is known to have a pretty healthy life due to the high care for their individual health and how high they view doctors. Also just based off of other things like location and lack of technology it makes sense to why Brunei and Cambodia seem to be more on the lower end of the stick especially since the data for lowest life span was taken in 1977 where already the life span was low for most countries but in general during that time when disease was one of the scariest things Cambodia lacked the knowledge and technology to take care of those diseases at the same time.
 
 
 
-## Including Plots
-
-## Aggregate Table
+## Asian Countries' Average Growth Rates
 ```{r table, echo = FALSE}
 knitr::kable(d)
 ```
-##### Short Summary
+
 This table shows the average growth in population for each country by percentage each year. We hoped to find countries of concern and further study their behaviors and policies. Nations such as Japan and Georgia have an extremely concerning lack of growth yearly, and we aim to find why that is through further research.
 
 We also hoped to find countries with high growths in populations in order to study further and see what they are doing in order to increase their populations year by year. An interesting thing to note is that countries which are located in the Middle East typically see larger growth year by year, than the rest of their Asian counterparts.
@@ -39,7 +37,7 @@ We also hoped to find countries with high growths in populations in order to stu
 ```{r growth, echo=FALSE}
 population_trend_plot
 ```
-##### Short summary
+
 This chart shows the population trends for every single country in Asia excluding China and India. We decided to exclude China and India for this plot because they created too large of an outlier. While every country had an increasing trend,we noticed that the countries that show a slight decline around the beginning of 21st Century are generally wealthier countries. 
 
 ## Map Chart (2021 only)
@@ -48,14 +46,15 @@ map1s
 happy_map
 ```
 
-##### Short summary
 The two map charts are suppose to show how one the population throughout all the Asian countries and additionally the happiness index across all the Asian countries. The first one is obvious on why it is important mainly because of the fact that it is important to document the population in 2021 and the happiness index can also be a way to indentify why a certain country has more people in it than not.
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## The Demographic Transition
 
 ```{r demotransit, echo = FALSE, message = FALSE, results = 'hide'}
 demo_transit
 ```
-## Summary
+
 
 The demographic transition is a model of population dynamics that argues the growth of countries follows a set pattern, driven by birth rates and death rates; 
 the population explosion following the industrial revolution can be explained by birth rates remaining high while death rates plummeted, and the recent trend of slowing growth can be explained as birth rates finally decreasing to match death rates. Each subregion of Asia displays this process, with noticably different timescales and idiosyncrasies.  
