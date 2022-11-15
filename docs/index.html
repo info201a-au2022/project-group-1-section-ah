@@ -358,13 +358,29 @@ Years</h1>
 </div>
 
 
-<div id="what-is-this-file-for" class="section level2">
-<h2>What is this file for?</h2>
+<div id="dynamic-paragraph" class="section level2">
+<h2>Dynamic Paragraph</h2>
+<p>With our summary function things that we were able to pull included
+the amount of countries (49), the higest population recorded in an Asian
+country based off recent reports (China, 1.412 billion), the country
+that had the lowest population recent reports (Brunei, ~440,000), the
+highest life expectancy based off all years (Japan, 84.62 years old,
+2020), and finally the lowest life expectancy based off all years
+(Cambodia, 18.91 years old, 1977). For most of these countries it really
+makes sense on to why their numbers are what they are. For example,
+China has always been known to have a massive population that is also
+sadly effecting them poorly with their insanely poor air quality.
+Additionally, Japan is known to have a pretty healthy life due to the
+high care for their individual health and how high they view doctors.
+Also just based off of other things like location and lack of technology
+it makes sense to why Brunei and Cambodia seem to be more on the lower
+end of the stick especially since the data for lowest life span was
+taken in 1977 where already the life span was low for most countries but
+in general during that time when disease was one of the scariest things
+Cambodia lacked the knowledge and technology to take care of those
+diseases at the same time.</p>
 <ul>
-<li><p>This file will eventually become your project report for
-<strong>P02: Exploratory Data Analysis</strong>. Specifically, you will
-write rmarkdown to report your exploratory data analysis.</p></li>
-<li><p>Please see Canvas for more details.</p></li>
+<li>Please see Canvas for more details.</li>
 </ul>
 </div>
 <div id="accessing-the-source-directory" class="section level2">
@@ -372,13 +388,11 @@ write rmarkdown to report your exploratory data analysis.</p></li>
 <div id="example-1-source-some-code-and-run-a-function" class="section level3">
 <h3>Example 1: Source some code and run a function</h3>
 <pre class="r"><code># Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
+# directory(..), down into source (/source), and
 # then &quot;source&quot; an R file (data_access.R)
-library(maps)</code></pre>
-<pre><code>## Warning: package &#39;maps&#39; was built under R version 4.2.2</code></pre>
-<pre class="r"><code>library(cowplot)</code></pre>
-<pre><code>## Warning: package &#39;cowplot&#39; was built under R version 4.2.2</code></pre>
-<pre class="r"><code>source(&quot;../source/data_access.R&quot;)
+library(maps)
+library(cowplot)
+source(&quot;../source/data_access.R&quot;)
 data_access_test()</code></pre>
 <pre><code>## [1] &quot;Hello: World!&quot;</code></pre>
 </div>
@@ -392,8 +406,8 @@ source(&quot;../source/map_chart.R&quot;)</code></pre>
 <pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 4.2.2</code></pre>
 <pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
 ## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
-## ✔ tidyr   1.2.1      ✔ stringr 1.4.1 
-## ✔ readr   2.1.3      ✔ forcats 0.5.2 
+## ✔ tidyr   1.2.1      ✔ stringr 1.4.1
+## ✔ readr   2.1.3      ✔ forcats 0.5.2
 ## ✔ purrr   0.3.4</code></pre>
 <pre><code>## Warning: package &#39;tidyr&#39; was built under R version 4.2.2</code></pre>
 <pre><code>## Warning: package &#39;readr&#39; was built under R version 4.2.2</code></pre>
@@ -403,21 +417,21 @@ source(&quot;../source/map_chart.R&quot;)</code></pre>
 ## ✖ dplyr::lag()    masks stats::lag()
 ## ✖ purrr::map()    masks maps::map()</code></pre>
 <pre><code>## Warning: package &#39;plotly&#39; was built under R version 4.2.2</code></pre>
-<pre><code>## 
+<pre><code>##
 ## Attaching package: &#39;plotly&#39;
-## 
+##
 ## The following object is masked from &#39;package:ggplot2&#39;:
-## 
+##
 ##     last_plot
-## 
+##
 ## The following object is masked from &#39;package:stats&#39;:
-## 
+##
 ##     filter
-## 
+##
 ## The following object is masked from &#39;package:graphics&#39;:
-## 
+##
 ##     layout
-## 
+##
 ## Rows: 3150 Columns: 14── Column specification ────────────────────────────────────────────────────────
 ## Delimiter: &quot;,&quot;
 ## chr  (3): Country, Code, ContinentCode
@@ -443,12 +457,12 @@ generated that includes both content as well as the output of any
 embedded R code chunks within the document. You can embed an R code
 chunk like this:</p>
 <pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
+<pre><code>##      speed           dist
+##  Min.   : 4.0   Min.   :  2.00
+##  1st Qu.:12.0   1st Qu.: 26.00
+##  Median :15.0   Median : 36.00
+##  Mean   :15.4   Mean   : 42.98
+##  3rd Qu.:19.0   3rd Qu.: 56.00
 ##  Max.   :25.0   Max.   :120.00</code></pre>
 </div>
 <div id="including-plots" class="section level2">

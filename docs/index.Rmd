@@ -9,9 +9,8 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## What is this file for?
-
-* This file will eventually become your project report for **P02: Exploratory Data Analysis**. Specifically, you will write rmarkdown to report your exploratory data analysis.
+## Dynamic Paragraph
+With our summary function things that we were able to pull included the amount of countries (49), the higest population recorded in an Asian country based off recent reports (China, 1.412 billion), the country that had the lowest population recent reports (Brunei, ~440,000), the highest life expectancy based off all years (Japan, 84.62 years old, 2020), and finally the lowest life expectancy based off all years (Cambodia, 18.91 years old, 1977). For most of these countries it really makes sense on to why their numbers are what they are. For example, China has always been known to have a massive population that is also sadly effecting them poorly with their insanely poor air quality. Additionally, Japan is known to have a pretty healthy life due to the high care for their individual health and how high they view doctors. Also just based off of other things like location and lack of technology it makes sense to why Brunei and Cambodia seem to be more on the lower end of the stick especially since the data for lowest life span was taken in 1977 where already the life span was low for most countries but in general during that time when disease was one of the scariest things Cambodia lacked the knowledge and technology to take care of those diseases at the same time.
 
 * Please see Canvas for more details.
 
@@ -38,6 +37,7 @@ msg <- data_access_test(" Morgan!")
 # Sourcing charts here
 source("../source/map_chart.R")
 source("../source/chart2.R")
+source("../source/table.R")
 ```
 
 > `r msg` Hope you have a good day!! 
@@ -54,11 +54,21 @@ summary(cars)
 
 ## Including Plots
 
-You can also embed plots, for example:
-Map Chart
+## Aggregate Table
+```{r table, echo = FALSE}
+d
+```
+##### Short Summary
+This table shows the average growth in population for each country by percentage each year. We hoped to find countries of concern and further study their behaviors and policies. Nations such as Japan and Georgia have an extremely concerning lack of growth yearly, and we aim to find why that is through further research.
+
+We also hoped to find countries with high growths in populations in order to study further and see what they are doing in order to increase their populations year by year. An interesting thing to note is that countries which are located in the Middle East typically see larger growth year by year, than the rest of their Asian counterparts.
+
+## Map Chart (2021 only)
 ```{r pressure, echo=FALSE}
 map1s
 happy_map
 ```
 
+##### Short summary
+The two map charts are suppose to show how one the population throughout all the Asian countries and additionally the happiness index across all the Asian countries. The first one is obvious on why it is important mainly because of the fact that it is important to document the population in 2021 and the happiness index can also be a way to indentify why a certain country has more people in it than not.
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

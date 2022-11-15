@@ -24,13 +24,16 @@ summary_info$lowest_population_2021 <- populationData %>%
   select(Population.size.in.millions, Country)
 
 # highest life expectancy in Asia
-summary_info$highest_life_expectancy <- populationData %>% 
+summary_info$highest_life_expectancy_all_time <- populationData %>% 
   filter(Life.expectancy.in.years == max(Life.expectancy.in.years, na.rm = TRUE)) %>% 
   select(Country, Life.expectancy.in.years, Year)
 
 # lowest life expectancy in Asia 
-summary_info$lowest_life_expectancy <- populationData %>% 
+summary_info$lowest_life_expectancy_all_time <- populationData %>% 
   filter(Life.expectancy.in.years == min(Life.expectancy.in.years, na.rm = TRUE)) %>% 
   select(Country, Life.expectancy.in.years, Year)
+
+# Average population growth percentage
+summary_info$avg_population_growth <- mean(population_data$Population.growth.percent, na.rm = TRUE)
 
 View(summary_info)
