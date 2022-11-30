@@ -9,25 +9,44 @@
 
 library(shiny)
 
-# Define UI for application that draws a histogram
-shinyUI(fluidPage(
+#source("datafile_name.R", local = knitr::knit_global())
+#source commented out because I am not using any data here 
 
-    # Application title
-    titlePanel("Old Faithful Geyser Data"),
+introduction_page <- tabPanel(
+  "Introduction", 
+  h1("This is my header. I can align it wherever I want on the page. "), 
+  p("this is my paragraph. I can change fonts and text sizes (documented online).I can also add images")
+)
 
-    # Sidebar with a slider input for number of bins
-    sidebarLayout(
-        sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
-        ),
+conclusion_page <- tabPanel(
+  "Conclusions",
+  h1("Conclusions", align = "center"),
+  p("This is my paragraph")
+)
 
-        # Show a plot of the generated distribution
-        mainPanel(
-            plotOutput("distPlot")
-        )
-    )
-))
+
+page2 <- tabPanel(
+  "Final Thoughts", 
+  h1("Header 1"),
+  h3("Header 2 "),
+  p("P2. I can also add an image here"),
+  img()
+)
+
+
+
+ui <- navbarPage(
+  "INFO 201 Final Project",
+  introduction_page,
+  page2,
+  conclusion_page
+)
+
+server <- function(input, output, session) {
+  
+}
+
+shinyApp(ui, server)
+
+
+
