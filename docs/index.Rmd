@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r sourcing, include=FALSE}
-# Sourcing charts here
+
 source("../source/map_chart.R")
 source("../source/chart2.R")
 source("../source/table.R")
