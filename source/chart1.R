@@ -2,6 +2,32 @@
 library(ggplot2)
 library(dplyr)
 library(tidyverse)
+library(shiny)
+
+
+ui <- fluidPage(
+  tags$head(
+    tags$script(src = "selectize-disable-options.js"),
+    tags$style(HTML(CSS))
+  ),
+  titlePanel("Population Trends"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("Country","Select a Country", choices = c("All",unique(population_data$Country))),
+      actionButton("goButton", "Update")
+    ),
+    mainPanel(
+      tabsetPanel(
+        tabPanel('Plot', plotOutput("population_trend_plot"))
+      )
+    )
+  )
+)
+
+
+
+
+
 
 population_data <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-1-section-ah/main/data/populationDataset.csv") %>% 
   data.frame()
@@ -12,8 +38,8 @@ by_country <- filter(by_country, Code != "CHN")
 by_country <- filter(by_country, Code != "IND")
 View(by_country)
 
-population_trend_plot <- ggplot(by_country, aes(x=Year, y=Population.size.in.millions, color = Code)) + geom_line()
-print(population_trend_plot + ggtitle("Population Trends of Every Country in Asia Excluding China and India") + labs(y = "Population Size in Millions"))
+population_trend_plot <- ggplot(by_country, aes(x=Year, y=Population.size.in.millions, color = Code)) + geom_line() + ggtitle("Population Trends of Every Country in Asia Excluding China and India") + labs(y = "Population Size in Millions")
+print(population_trend_plot)
 
 # This chart shows the population trends for every single country in Asia excluding China and India.
 # We decided to exclude China and India for this plot because they created too large of an outlier.
