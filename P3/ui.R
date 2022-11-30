@@ -18,27 +18,42 @@ introduction_page <- tabPanel(
   p("this is my paragraph. I can change fonts and text sizes (documented online).I can also add images")
 )
 
-conclusion_page <- tabPanel(
-  "Conclusions",
-  h1("Conclusions", align = "center"),
-  p("This is my paragraph")
-)
-
-
 page2 <- tabPanel(
-  "Final Thoughts", 
+  "Growth Rates", 
   h1("Header 1"),
   h3("Header 2 "),
   p("P2. I can also add an image here"),
   img()
 )
 
+page3 <- tabPanel(
+  "World Map", 
+  h1("Header 1"),
+  h3("Header 2 "),
+  p("P2. I can also add an image here"),
+  img()
+)
 
+page4 <- tabPanel(
+  "Demographic Transition", 
+  h1("Header 1"),
+  h3("Header 2 "),
+  p("P2. I can also add an image here"),
+  img()
+)
+
+conclusion_page <- tabPanel(
+  "Conclusions",
+  h1("Conclusions", align = "center"),
+  p("This is my paragraph")
+)
 
 ui <- navbarPage(
   "INFO 201 Final Project",
   introduction_page,
   page2,
+  page3, 
+  page4, 
   conclusion_page
 )
 
