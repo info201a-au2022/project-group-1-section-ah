@@ -4,6 +4,12 @@ library(dplyr)
 library(tidyverse)
 library(shiny)
 
+CSS <- "
+.selectize-dropdown [data-selectable].option-disabled {
+  color: #aaa;
+  cursor: default;
+}"
+
 
 ui <- fluidPage(
   tags$head(
