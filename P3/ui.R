@@ -36,10 +36,45 @@ page3 <- tabPanel(
 
 page4 <- tabPanel(
   "Demographic Transition", 
-  h1("Header 1"),
-  h3("Header 2 "),
-  p("P2. I can also add an image here"),
-  img()
+  h1(strong("The Demographic Transition")),
+  h3("How and why do countries grow?"),
+  p("The demographic transition model of population dynamics argues that the 
+    explosion of growth developing countries go through is due to a temporary
+    divergence of birth rates and death rates."),
+  p("\"Stage 1\" countries have mostly unchanging
+    population counts, with high birth rates and high deeath rates. By stage 3,
+    countries have developed better healthcare systems, less dangerous workplaces,
+    and more stable political systems which all work to decrease death rates. 
+    This is the stage of rapid growth; death rates are plummeting, but birth rates
+    are stable, meaning the population grows quickly. By Stage 5, birth rates have
+    fallen to match death rates. Country populations are stable again, or even
+    decreasing, if the population is on average suitably old."),
+  img(),
+  
+  sidebarLayout(
+    sidebarPanel(
+      selectizeInput(
+        inputId = "subregions", 
+        label = "Select a Subregion", 
+        choices = c("South", "East", "West", "Eurasia", "Southeast", "Central"), 
+        selected = "South",
+        multiple = TRUE
+      ),
+      
+      sliderInput("time_range",
+                  "Timeframe",
+                  min = 1960,
+                  max = 2018,
+                  value = c(1960, 2018),
+                  sep = "")
+    ),
+    
+    mainPanel(
+      plotlyOutput("dt_plot"),
+    )
+  )
+  
+  
 )
 
 conclusion_page <- tabPanel(
