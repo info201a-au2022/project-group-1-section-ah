@@ -9,6 +9,7 @@ library("plotly")
 # define the UI value and server function respectively.
 source("ui.R")
 source("server.R")
+source("global.R")
 
 # You will need to fill in the `app_ui.R` file to create the layout.
 # Run the app through this file.
