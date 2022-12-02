@@ -5,9 +5,9 @@ account: tjsander
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7792979
-bundleId: 6581075
+bundleId: 6581193
 url: https://tjsander.shinyapps.io/modeling_asian_growth/
-when: 1669968667.30078
-lastSyncTime: 1669968667.3008
+when: 1669970925.68332
+lastSyncTime: 1669970925.68334
 asMultiple: FALSE
 asStatic: FALSE

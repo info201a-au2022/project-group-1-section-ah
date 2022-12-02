@@ -96,10 +96,10 @@ server <- function(input, output, session) {
   
   output$dt_plot <- renderPlotly({ggplotly(ggplot(demo_transit_data()) +
                                              geom_point(mapping = aes(
-                                               x = Fertility.rate.births.per.woman, 
-                                               y = Death.rate.per.1000.people, 
-                                               color = Year, 
-                                               text = paste("Country:", Country)
+                                               x = ~Fertility.rate.births.per.woman, 
+                                               y = ~Death.rate.per.1000.people, 
+                                               color = ~Year, 
+                                               text = ~paste("Country:", Country)
                                              ), alpha = .5) +
                                              scale_color_gradient(low = "gray", high = "red") +
                                              facet_wrap(~subregion) + 
