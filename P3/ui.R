@@ -133,7 +133,7 @@ page4 <- tabPanel(
         inputId = "subregions", 
         label = "Select a Subregion", 
         choices = c("South", "East", "West", "Eurasia", "Southeast", "Central"), 
-        selected = "South",
+        selected = "Eurasia",
         multiple = TRUE
       ),
       
