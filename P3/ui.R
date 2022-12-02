@@ -133,7 +133,7 @@ page4 <- tabPanel(
         inputId = "subregions", 
         label = "Select a Subregion", 
         choices = c("South", "East", "West", "Eurasia", "Southeast", "Central"), 
-        selected = "Eurasia",
+        selected = "South",
         multiple = TRUE
       ),
       
@@ -168,10 +168,6 @@ ui <- navbarPage(
   conclusion_page
 )
 
-server <- function(input, output, session) {
-  
-}
 
-shinyApp(ui, server)
 
 

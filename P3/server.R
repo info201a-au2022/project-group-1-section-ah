@@ -10,10 +10,11 @@
 library(shiny)
 library(tidyverse)
 library(plotly)
+library(dplyr)
 
-asia_data <- read.csv("../data/populationDataset.csv")
-
-asia_data <- dplyr::mutate(asia_data, subregion = ifelse(asia_data$Country %in% c("China",
+  
+asia_data <- read.csv("../data/populationDataset.csv") %>% 
+  dplyr::mutate(asia_data, subregion = ifelse(asia_data$Country %in% c("China",
                                                                                   "Japan",
                                                                                   "South Korea",
                                                                                   "Hong Kong",
@@ -86,7 +87,11 @@ asia_data <- dplyr::mutate(asia_data, subregion = ifelse(asia_data$Country %in% 
                                                                                             "NA")
                                                                               ))))))
 
+
+
+
 server <- function(input, output, session) {
+  
   
   demo_transit_data <- reactive({ 
     asia_data %>% 
@@ -102,7 +107,7 @@ server <- function(input, output, session) {
                                                text = paste("Country:", Country)
                                              ), alpha = .5) +
                                              scale_color_gradient(low = "gray", high = "red") +
-                                             facet_wrap(subregion) + 
+                                             facet_wrap(~subregion) + 
                                              labs(
                                                title = "Visualizing Demographic Transition",
                                                x = "Fertility Rate (Births/Woman)",
