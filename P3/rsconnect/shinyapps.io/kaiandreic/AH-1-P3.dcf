@@ -5,9 +5,9 @@ account: kaiandreic
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 7775790
-bundleId: 6573895
+bundleId: 6584391
 url: https://kaiandreic.shinyapps.io/AH-1-P3/
-when: 1669836055.53045
-lastSyncTime: 1669836055.53046
+when: 1670029054.06163
+lastSyncTime: 1670029054.06163
 asMultiple: FALSE
 asStatic: FALSE
