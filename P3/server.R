@@ -12,7 +12,7 @@ library(tidyverse)
 library(plotly)
 library(dplyr)
 
-  
+# Data wrangling for the demo transit chart
 asia_data <- read.csv("../data/populationDataset.csv") %>% 
   dplyr::mutate(asia_data, subregion = ifelse(asia_data$Country %in% c("China",
                                                                                   "Japan",

@@ -90,8 +90,22 @@ asia_data <- dplyr::mutate(asia_data, subregion = ifelse(asia_data$Country %in% 
 
 introduction_page <- tabPanel(
   "Introduction", 
-  h1("This is my header. I can align it wherever I want on the page. "), 
-  p("this is my paragraph. I can change fonts and text sizes (documented online).I can also add images")
+  h1("Introduction: The World Population Explosion"),
+  img("Shibuya Crossing in Tokyo.", src = "../docs/shibuya.jpeg"),
+  h2("Asia is the largest continent by population."), 
+  p("And population has been on everyone's mind. On November 15th, 2022, the Earth's
+    population hit 8 billion. Climate change is reaching an unstoppable pace, 
+    already dealing catastrophic damage through mass flooding in Bangladesh and deadly
+    heat waves in England - and all the while, the world's population continues to
+    grow exponentially."),
+  p("What countries are growing rapidly and why? What countries are stagnating and 
+    why? These are the questions we hope to answer with this report. Asia is just
+    one part of the world, and proportionally contributes less to global warming 
+    than some other continents. However, it is also the largest by population, 
+    and many of its countries present great examples of population struggles 
+    globally. By using population data dating back to 1960, we hope to gain some
+    insight on the population dynamics of Asia - and maybe in doing so, better 
+    understand population dynamics of the world.")
 )
 
 page2 <- tabPanel(
