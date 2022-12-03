@@ -17,3 +17,9 @@ source("global.R")
 # Create a new `shinyApp()` using the loaded `ui` and `server` variables
 shinyApp(ui = ui, server = server)
 
+rsconnect::setAccountInfo(name='kaiandreic',
+                          token='1D18FCC92F117605869484F4DB34910E',
+                          secret='Z7dWEkgGy2Roej/uyUKE4bpAdXnBIiNdRzhsRuIV')
+
+
+#https://kaiandreic.shinyapps.io/AH-1-P3/
