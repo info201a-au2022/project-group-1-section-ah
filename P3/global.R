@@ -3,6 +3,17 @@ library(plotly)
 library(shiny)
 
 
+
+# Data for Population Trends Tab
+population_data <- read.csv("../data/populationDataset.csv") %>% 
+  data.frame()
+
+by_country <- population_data[, c(2, 4, 7)] 
+
+
+
+
+
 asia_data <- read.csv("../data/populationDataset.csv")
 
 asia_data <- dplyr::mutate(asia_data, subregion = ifelse(asia_data$Country %in% c("China",

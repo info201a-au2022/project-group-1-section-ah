@@ -133,7 +133,7 @@ page2 <- tabPanel(
     ),
     
     mainPanel(
-      plotlyOutput(""),
+      plotlyOutput("pop_trends_plot"),
     )
   )
 )
