@@ -110,10 +110,33 @@ introduction_page <- tabPanel(
 
 page2 <- tabPanel(
   "Growth Rates", 
-  h1("Header 1"),
+  h1(strong("Growth Rates of Asian Countries")),
   h3("Header 2 "),
   p("P2. I can also add an image here"),
-  img()
+  img(), 
+  
+  sidebarLayout(
+    sidebarPanel(
+      selectizeInput(
+        inputId = "Country", 
+        label = "Select a Country", 
+        choices = c("AFG", "ARE", "ARM", "AZE", "BGD", "BHR", "BRN", "BTN", "CHN", "CYP", "GEO", "IDN", "IND", "IRN", "IRQ", "ISR", "JOR", "JPN", "KAZ", "KGZ", "KHM", "KOR", "KWT", "LAO", "LBN", "LKA", "MAC", "MDV", "MNG", "MYS", "NPL", "OMN", "PAK", "PHL", "PRK", "PS", "QAT", "RUS", "SAU", "SGP", "SYR", "THA", "TJK", "TKM", "TUR", "TWN", "UZB", "VNM", "YEM"), 
+        selected = "AFG",
+        multiple = TRUE
+      ),
+      
+      sliderInput("time_range",
+                  "Timeframe",
+                  min = 1960,
+                  max = 2018,
+                  value = c(1960, 2018),
+                  sep = "")
+    ),
+    
+    mainPanel(
+      plotlyOutput("dt_plot"),
+    )
+  )
 )
 
 page3 <- tabPanel(
