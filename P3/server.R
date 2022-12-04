@@ -88,10 +88,31 @@ asia_data <- read.csv("../data/populationDataset.csv") %>%
                                                                               ))))))
 
 
+# Data for Population Trends Tab
+population_data <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-1-section-ah/main/data/populationDataset.csv") %>% 
+  data.frame()
+
+by_country <- population_data[, c(2, 4, 7)] 
+
+
+population_trend_plot <- ggplot(by_country, aes(x=Year, y=Population.size.in.millions, color = Code)) + geom_line() + ggtitle("Population Trends of Every Country in Asia Excluding China and India") + labs(y = "Population Size in Millions")
+print(population_trend_plot)
 
 
 server <- function(input, output, session) {
   
+  population_trends_data <- reactive({
+    by_country %>% 
+      filter(Code %in% input$Country,
+             Year %in% c(input$time_range[1]:input$time_range[2]))
+  })
+
+  output$pop_trends_plot <- renderPlotly({ggplotly(ggplot(population_trends_data, aes(x=Year, y=Population.size.in.millions, color = Code)) + 
+                                                     geom_line() + 
+                                                     ggtitle("Population Trends of Every Country in Asia Excluding China and India") +
+                                                     labs(y = "Population Size in Millions") 
+                                                     )
+    })
   
   demo_transit_data <- reactive({ 
     asia_data %>% 
