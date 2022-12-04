@@ -109,7 +109,7 @@ introduction_page <- tabPanel(
 )
 
 page2 <- tabPanel(
-  "Population Trneds", 
+  "Population Trends", 
   h1(strong("Population Trends of Asian Countries")),
   p("Select the country and time range to view the population trends"),
   img(), 
