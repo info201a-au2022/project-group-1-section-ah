@@ -133,7 +133,7 @@ page2 <- tabPanel(
     ),
     
     mainPanel(
-      plotlyOutput("dt_plot"),
+      plotlyOutput(""),
     )
   )
 )
