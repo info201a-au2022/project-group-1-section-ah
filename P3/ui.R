@@ -109,10 +109,9 @@ introduction_page <- tabPanel(
 )
 
 page2 <- tabPanel(
-  "Growth Rates", 
-  h1(strong("Growth Rates of Asian Countries")),
-  h3("Header 2 "),
-  p("P2. I can also add an image here"),
+  "Population Trneds", 
+  h1(strong("Population Trends of Asian Countries")),
+  p("Select the country and time range to view the population trends"),
   img(), 
   
   sidebarLayout(
