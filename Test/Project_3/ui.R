@@ -205,7 +205,7 @@ page4 <- tabPanel(
     sidebarPanel(
       selectizeInput(
         inputId = "subregions", 
-        label = "Select a Subregion", 
+        label = "Select Subregion(s)", 
         choices = c("South", "East", "West", "Eurasia", "Southeast", "Central"), 
         selected = "South",
         multiple = TRUE
@@ -216,7 +216,14 @@ page4 <- tabPanel(
                   min = 1960,
                   max = 2018,
                   value = c(1960, 2018),
-                  sep = "")
+                  sep = ""
+      ),
+      
+      radioButtons("color_var",
+                  "Color Encoding",
+                  choices = c("Year", "growth_ranking"),
+                  selected = "Year"
+      )
     ),
     
     mainPanel(
