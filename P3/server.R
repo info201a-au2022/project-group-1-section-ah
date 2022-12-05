@@ -11,7 +11,7 @@ library(shiny)
 library(tidyverse)
 library(plotly)
 library(dplyr)
-
+source("../P3/helper.R")
 # Data wrangling for the demo transit chart
 asia_data <- read.csv("../data/populationDataset.csv") %>% 
   dplyr::mutate(asia_data, subregion = ifelse(asia_data$Country %in% c("China",
@@ -133,5 +133,14 @@ server <- function(input, output, session) {
                                              ) 
   )
   })
-}
+  output$distPlot <- renderGirafe({
+    ggiraph(code = print(worldMaps(df2019, mapdatas, input$DataType)))
+  })
+  }
+
+
+
+#World Map
+
+  
 
