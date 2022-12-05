@@ -108,7 +108,7 @@ server <- function(input, output, session) {
                                                      geom_line() + 
                                                      ggtitle("Population Trends") +
                                                      labs(y = "Population Size in Millions") 
-  )
+  )                                               
   })
   
   demo_transit_data <- reactive({ 
