@@ -90,7 +90,7 @@ asia_data <- read.csv("populationDataset.csv") %>%
                                                                    ))))))
 asia_data <- asia_data %>% 
   group_by(Country) %>% 
-  mutate(growth_ranking = rank(Population.growth.percent, ties.method = 'first'))
+  mutate('Growth Score' = rank(Population.growth.percent, ties.method = 'first')) 
 
 
 # Data for Population Trends Tab
@@ -127,7 +127,7 @@ server <- function(input, output, session) {
                                                x = Fertility.rate.births.per.woman, 
                                                y = Death.rate.per.1000.people, 
                                                color = .data[[input$color_var]], 
-                                               text = paste("Country:", Country, "\n Growth Rate: ", Population.growth.percent,"%")
+                                               text = paste("Country:", Country, "\nGrowth Rate: ", Population.growth.percent,"%")
                                              ), alpha = .5) +
                                              scale_color_gradient(low = "gray", high = "red") +
                                              facet_wrap(~subregion) + 

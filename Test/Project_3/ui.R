@@ -100,10 +100,10 @@ by_country <- population_data[, c(2, 4, 7)]
 introduction_page <- tabPanel(
   fluidPage(theme = shinytheme("cosmo"),
   "Introduction", 
-  h1("Introduction: The World Population Explosion"),
-  h3("Group AH-1 by Kai Andreic, Yoobin Lee, Ethan Kim, Tom Sanders"),
+  h1(strong("The World Population Explosion")),
+  p(em("Group AH-1: Kai Andreic, Yoobin Lee, Ethan Kim, Tom Sander")),
   img(src='shibuya.jpg', align = "right"),
-  h2("Asia is the largest continent by population."), 
+  h3("Asia is the largest continent by population."), 
   p("And population has been on everyone's mind. On November 15th, 2022, the Earth's
     population hit 8 billion. Climate change is reaching an unstoppable pace, 
     already dealing catastrophic damage through mass flooding in Bangladesh and deadly
@@ -116,13 +116,14 @@ introduction_page <- tabPanel(
     and many of its countries present great examples of population struggles 
     globally. By using population data dating back to 1960, we hope to gain some
     insight on the population dynamics of Asia - and maybe in doing so, better 
-    understand population dynamics of the world.")
+    understand population dynamics of the world."),
+  p(strong("Select a tab below to begin exploring the data."))
 )
 )
 page2 <- tabPanel(
   "Population Trends", 
   h1(strong("Population Trends of Asian Countries")),
-  p("Select the country and time range to view the population trends"),
+  p("Select a country and time range to view the population trends"),
   img(), 
   
   sidebarLayout(
@@ -138,8 +139,8 @@ page2 <- tabPanel(
       sliderInput("timeRange",
                   "Timeframe",
                   min = 1960,
-                  max = 2018,
-                  value = c(1960, 2018),
+                  max = 2021,
+                  value = c(1960, 2021),
                   sep = "")
     ),
     
@@ -214,15 +215,16 @@ page4 <- tabPanel(
       sliderInput("time_range",
                   "Timeframe",
                   min = 1960,
-                  max = 2018,
-                  value = c(1960, 2018),
+                  max = 2021,
+                  value = c(1960, 2021),
                   sep = ""
       ),
       
       radioButtons("color_var",
                   "Color Encoding",
-                  choices = c("Year", "growth_ranking"),
-                  selected = "Year"
+                  choiceValues = c("Year", "Growth Score"),
+                  selected = "Year",
+                  choiceNames = c("Year", "Growth Rate (YoY)")
       )
     ),
     
