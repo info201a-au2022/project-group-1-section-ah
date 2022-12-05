@@ -6,7 +6,6 @@
 #
 #    http://shiny.rstudio.com/
 #
-install.packages("shinythemes")
 library("shinythemes")
 library(shiny)
 library(plotly)
@@ -228,8 +227,8 @@ page4 <- tabPanel(
 )
 
 conclusion_page <- tabPanel(
-  "Conclusions",
-  h1("Conclusions", align = "center"),
+  "Summary Takeaways",
+  h1("Summary Takeaways", align = "center"),
   p("This is my paragraph")
 )
 
