@@ -4,32 +4,6 @@ library(dplyr)
 library(tidyverse)
 library(shiny)
 
-#CSS <- "
-#.selectize-dropdown [data-selectable].option-disabled {
-#  color: #aaa;
-#  cursor: default;
-#}"
-
-
-#ui <- fluidPage(
-#  tags$head(
-#    tags$script(src = "selectize-disable-options.js"),
-#    tags$style(HTML(CSS))
-#  ),
-#  titlePanel("Population Trends"),
-#  sidebarLayout(
-#    sidebarPanel(
-#      selectInput("Country","Select a Country", choices = c("All",unique(population_data$Country))),
-#      actionButton("goButton", "Update")
-#    ),
-#    mainPanel(
-#      tabsetPanel(
-#        tabPanel('Plot', plotOutput("population_trend_plot"))
-#      )
-#    )
-#  )
-#)
-
 
 population_data <- read.csv("https://raw.githubusercontent.com/info201a-au2022/project-group-1-section-ah/main/data/populationDataset.csv") %>% 
   data.frame()
