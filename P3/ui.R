@@ -154,19 +154,19 @@ page3 <- tabPanel(
 
 
   
-  # App title
+  
   titlePanel("Unemployment Rate in Asia 2020"),
   
   
-  # Main panel for displaying outputs
+  
   mainPanel(
     
-    # Hide errors
+    
     tags$style(type = "text/css",
                ".shiny-output-error { visibility: hidden; }",
                ".shiny-output-error:before { visibility: hidden; }"),
     
-    # Output: interactive world map
+   
     girafeOutput("distPlot")
     
   )

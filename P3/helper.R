@@ -10,9 +10,10 @@ world_data <- ggplot2::map_data('world')
 world_data <- fortify(world_data)
 head(world_data)
 
-df <- read.csv("/Users/kai/Documents/Info201/project-group-1-section-ah/data/populationDataset.csv")
 
 
+
+df <- read.csv("../data/populationDataset.csv")
 
 
 unemployment_rate <- df %>% 
