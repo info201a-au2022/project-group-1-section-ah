@@ -238,8 +238,28 @@ page4 <- tabPanel(
 
 conclusion_page <- tabPanel(
   "Summary Takeaways",
-  h1("Summary Takeaways", align = "center"),
-  p("This is my paragraph")
+  h1(strong("Summary Takeaways")),
+  h3("Population Trends"),
+  p("The visualization of each country's population trends reveal a lot about 
+    which nations are struggling with their respective populations. Nations such
+    as Japan and Georgia have an extremely concerning lack of growth yearly, whilst
+    nations such as the United Arab Emirates and Qatar's growths are thriving.
+    An interesting thing to note is that countries which are located in the Middle 
+    East typically see larger growth year by year, than the rest of their Asian counterparts."),
+  h3("World Map"),
+  p("This map of unemployment rates implies that population growth is at least
+    somewhat related to rates of unemployment. In some nations where there is high
+    unemployment, such as Armenia and Georgia, there is also clear decline in populations.
+    On the other hand, some nations such as Jordan and Palestine have high unemployment
+    yet high population growth. A key takeaway is that unemployment is a factor that
+    can affect population decline, yet it is not always an accurate indicator of it."),
+  h3("Demographic Transition"),
+  p("The demographic transition is a model of population dynamics that argues the 
+    growth of countries follows a set pattern, driven by birth rates and death 
+    rates. A main point shown by the graphs is that there each nation sees a clear 
+    population explosion following the industrial revolution. Birth rates remained 
+    high whilst death rates plummeted due to technological advancements, such as 
+    vaccinations and water purifiers.")
 )
 
 ui <- navbarPage(

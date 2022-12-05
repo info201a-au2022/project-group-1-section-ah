@@ -80,6 +80,16 @@ In the event that all of our research questions are answered, there are many imp
 
 ### **Limitations**
 Some limiations we need to address are that aside from the data collected and visualized, which are also estimates, a lot of our analysis will be based on prediction. The subject of our research relies heavily on assumption or an educated guess at best. For example, since surveying the entire population for the reason for their choice on to have a child or not is impossible, we study their culture, religion, ethics, and etc, to make an educated guess backed with evidence. Another limitation is that historical events will affect our data analysis. Events like plagues, wars, or any other event that impacted population count can all potentially somewhat skew our data. We will attempt to do our best in identifying those outliers, but it is near impossible to filter all of it.
+
+### **Findings**
+1. The nations which are facing the most issues when pertaining to population include China, India, Japan, Georgia, and Taiwan. China and India are home to extremely large populations already, with both nations holding over a billion people each. If the trend continues, overpopulation can lead to higher unemployment rates, an increased toll on the environment, and a decreased quality of life. On the other hand, Japan, Georgia, and Taiwan face struggles growing their population. In certain years, the population of each of these nations actually declines. If the population continues to grow at an extremely slow rate, it could harm each country's global influence, as age related spending (ex. healthcare, pensions) would go up, and the amount of people able to work labor would go down. Their societies and economies would hold the largest burdens. 
+
+2. The main common factor of nations that have the highest birth/death rate incline/decline pertains to economic development. 
+
+### **Discussion**
+
+### **Conclusion**
+
 ### **Acknowledgements**
 ### References
 * “World Population 1950-2022.” MacroTrends, https://www.macrotrends.net/countries/WLD/world/population.  *(found all population datasets)*

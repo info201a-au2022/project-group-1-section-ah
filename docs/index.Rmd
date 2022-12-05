@@ -38,7 +38,7 @@ We also hoped to find countries with high growths in populations in order to stu
 population_trend_plot
 ```
 
-This chart shows the population trends for every single country in Asia excluding China and India. We decided to exclude China and India for this plot because they created too large of an outlier. While every country had an increasing trend,we noticed that the countries that show a slight decline around the beginning of 21st Century are generally wealthier countries. 
+This chart shows the population trends for every single country in Asia excluding China and India. We decided to exclude China and India for this plot because they created too large of an outlier. While every country had an increasing trend, we noticed that the countries that show a slight decline around the beginning of 21st Century are generally wealthier countries. 
 
 ## Map Chart (2021 only)
 ```{r pressure, echo=FALSE}
