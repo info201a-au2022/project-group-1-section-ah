@@ -9,7 +9,7 @@
 
 library(shiny)
 library(plotly)
-
+source("../P3/helper.R")
 
 asia_data <- read.csv("../data/populationDataset.csv")
 
@@ -144,6 +144,25 @@ page3 <- tabPanel(
   h3("Header 2 "),
   p("P2. I can also add an image here"),
   img()
+)
+ui = fluidPage(
+  
+  # App title
+  titlePanel("Unemployment Rate in Asia 2020"),
+  
+  
+  # Main panel for displaying outputs
+  mainPanel(
+    
+    # Hide errors
+    tags$style(type = "text/css",
+               ".shiny-output-error { visibility: hidden; }",
+               ".shiny-output-error:before { visibility: hidden; }"),
+    
+    # Output: interactive world map
+    girafeOutput("distPlot")
+    
+  )
 )
 
 page4 <- tabPanel(
