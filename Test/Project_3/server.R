@@ -122,7 +122,7 @@ server <- function(input, output, session) {
                                                x = Fertility.rate.births.per.woman, 
                                                y = Death.rate.per.1000.people, 
                                                color = Year, 
-                                               text = paste("Country:", Country)
+                                               text = paste("Country:", Country, "\n Growth Rate: ", Population.growth.percent,"%")
                                              ), alpha = .5) +
                                              scale_color_gradient(low = "gray", high = "red") +
                                              facet_wrap(~subregion) + 
