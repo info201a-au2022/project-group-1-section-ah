@@ -104,7 +104,7 @@ server <- function(input, output, session) {
              Year %in% c(input$timeRange[1]:input$timeRange[2]))
   })
   
-  output$pop_trends_plot <- renderPlotly({ggplotly(ggplot(population_trends_data, aes(x=Year, y=Population.size.in.millions, color = Code)) + 
+  output$pop_trends_plot <- renderPlotly({ggplotly(ggplot(population_trends_data(), aes(x=Year, y=Population.size.in.millions, color = Code)) + 
                                                      geom_line() + 
                                                      ggtitle("Population Trends") +
                                                      labs(y = "Population Size in Millions") 
