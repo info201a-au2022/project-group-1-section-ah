@@ -85,6 +85,13 @@ asia_data <- dplyr::mutate(asia_data, subregion = ifelse(asia_data$Country %in% 
                                                                                             "Eurasia",
                                                                                             "NA")
                                                                               ))))))
+
+population_data <- read.csv("../data/populationDataset.csv") %>% 
+  data.frame()
+
+by_country <- population_data[, c(2, 4, 7)] 
+
+
 #source("datafile_name.R", local = knitr::knit_global())
 #source commented out because I am not using any data here 
 

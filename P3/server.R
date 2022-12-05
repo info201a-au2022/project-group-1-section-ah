@@ -106,10 +106,10 @@ server <- function(input, output, session) {
 
   output$pop_trends_plot <- renderPlotly({ggplotly(ggplot(population_trends_data, aes(x=Year, y=Population.size.in.millions, color = Code)) + 
                                                      geom_line() + 
-                                                     ggtitle("Population Trends of Every Country in Asia Excluding China and India") +
+                                                     ggtitle("Population Trends") +
                                                      labs(y = "Population Size in Millions") 
                                                      )
-    })
+  })
   
   demo_transit_data <- reactive({ 
     asia_data %>% 

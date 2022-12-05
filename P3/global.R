@@ -12,8 +12,6 @@ by_country <- population_data[, c(2, 4, 7)]
 
 
 
-
-
 asia_data <- read.csv("../data/populationDataset.csv")
 
 asia_data <- dplyr::mutate(asia_data, subregion = ifelse(asia_data$Country %in% c("China",
