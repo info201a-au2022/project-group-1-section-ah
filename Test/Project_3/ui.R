@@ -98,7 +98,7 @@ by_country <- population_data[, c(2, 4, 7)]
 introduction_page <- tabPanel(
   "Introduction", 
   h1("Introduction: The World Population Explosion"),
-  img("Shibuya Crossing in Tokyo.", src = "../docs/shibuya.jpg"),
+  img(src='shibuya.jpg', align = "right"),
   h2("Asia is the largest continent by population."), 
   p("And population has been on everyone's mind. On November 15th, 2022, the Earth's
     population hit 8 billion. Climate change is reaching an unstoppable pace, 
