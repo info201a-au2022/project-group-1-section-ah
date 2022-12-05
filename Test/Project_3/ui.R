@@ -6,10 +6,13 @@
 #
 #    http://shiny.rstudio.com/
 #
-
+install.packages("shinythemes")
+library("shinythemes")
 library(shiny)
 library(plotly)
 source("helper.R")
+
+
 
 asia_data <- read.csv("populationDataset.csv")
 
@@ -96,6 +99,7 @@ by_country <- population_data[, c(2, 4, 7)]
 #source commented out because I am not using any data here 
 
 introduction_page <- tabPanel(
+  fluidPage(theme = shinytheme("cosmo"),
   "Introduction", 
   h1("Introduction: The World Population Explosion"),
   h3("Group AH-1 by Kai Andreic, Yoobin Lee, Ethan Kim, Tom Sanders"),
@@ -115,7 +119,7 @@ introduction_page <- tabPanel(
     insight on the population dynamics of Asia - and maybe in doing so, better 
     understand population dynamics of the world.")
 )
-
+)
 page2 <- tabPanel(
   "Population Trends", 
   h1(strong("Population Trends of Asian Countries")),
