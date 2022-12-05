@@ -143,9 +143,9 @@ page3 <- tabPanel(
   h1("Header 1"),
   h3("Header 2 "),
   p("P2. I can also add an image here"),
-  img()
-)
-ui = fluidPage(
+  img(),
+
+
   
   # App title
   titlePanel("Unemployment Rate in Asia 2020"),
