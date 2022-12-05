@@ -98,6 +98,7 @@ by_country <- population_data[, c(2, 4, 7)]
 introduction_page <- tabPanel(
   "Introduction", 
   h1("Introduction: The World Population Explosion"),
+  h3("Group AH-1 by Kai Andreic, Yoobin Lee, Ethan Kim, Tom Sanders"),
   img(src='shibuya.jpg', align = "right"),
   h2("Asia is the largest continent by population."), 
   p("And population has been on everyone's mind. On November 15th, 2022, the Earth's
@@ -147,9 +148,7 @@ page2 <- tabPanel(
 
 page3 <- tabPanel(
   "World Map", 
-  h1("Header 1"),
-  h3("Header 2 "),
-  p("P2. I can also add an image here"),
+  h1("World Map"),
   img(),
   
   
@@ -169,7 +168,16 @@ page3 <- tabPanel(
     
     girafeOutput("distPlot")
     
-  )
+  ),
+  h3("Why seeing the unemployment rate is important"),
+  p("A lot of people decide to move away from their home country to find better
+    work. This would also obviously apply to people who may not even be able to
+    find work in their own country. So the main reason why we decided to look at
+    unemployment rates in each country is because it can relate to the decline
+    of population in each country. If the unmployment rate is high in certain
+    countries it promotes people to move to countries where they know they can
+    find a job. This would end up increasing and decreasing population in certain
+    countries."),
 )
 
 page4 <- tabPanel(
