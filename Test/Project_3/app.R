@@ -20,3 +20,5 @@ shinyApp(ui = ui, server = server)
 rsconnect::setAccountInfo(name='kaiandreic',
                           token='7A37F1A6AFD7995240083A28682929AA',
                           secret='B/W8DiDQwoLiJt4z+HzklBot0d9406PgT2kcHa7V')
+
+#https://kaiandreic.shinyapps.io/Project_3/
