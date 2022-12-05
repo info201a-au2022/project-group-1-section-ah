@@ -101,7 +101,7 @@ server <- function(input, output, session) {
   population_trends_data <- reactive({
     by_country %>% 
       filter(Code %in% input$Country,
-             Year %in% c(input$time_range[1]:input$time_range[2]))
+             Year %in% c(input$timeRange[1]:input$timeRange[2]))
   })
   
   output$pop_trends_plot <- renderPlotly({ggplotly(ggplot(population_trends_data, aes(x=Year, y=Population.size.in.millions, color = Code)) + 

@@ -135,7 +135,7 @@ page2 <- tabPanel(
         multiple = TRUE
       ),
       
-      sliderInput("time_range",
+      sliderInput("timeRange",
                   "Timeframe",
                   min = 1960,
                   max = 2018,
